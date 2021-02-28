@@ -20,6 +20,13 @@ defaults:
       permalink: /:path
   -
     scope:
+      path: "club.md"
+      type: pages
+    values:
+      layout: club
+      permalink: /:path
+  -
+    scope:
       path: "falaise.md"
       type: pages
     values:
