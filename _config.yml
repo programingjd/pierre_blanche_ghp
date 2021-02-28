@@ -1,15 +1,15 @@
 title: Pierre Blanche
 author: Jerome David
 favicon: favicon.svg
-timezone: Europe/Paris
+timezone: "Europe/Paris"
 
 defaults:
   -
     scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: post
+      layout: "post"
       permalink: /:collection/:name
   -
     scope:
