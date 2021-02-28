@@ -1,3 +1,21 @@
 title: Pierre Blanche
 author: Jerome David
 favicon: favicon.svg
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:collection/:name
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      permalink: /:path
+
+      
