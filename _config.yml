@@ -17,18 +17,18 @@ defaults:
       type: pages
     values:
       layout: page
-      permalink: /:path
+      permalink: /:path/:basename
   -
     scope:
       path: "club.md"
       type: pages
     values:
       layout: club
-      permalink: /:path
+      permalink: /:path/:basename
   -
     scope:
       path: "falaise.md"
       type: pages
     values:
       layout: falaise
-      permalink: /:path
+      permalink: /:path/:basename
