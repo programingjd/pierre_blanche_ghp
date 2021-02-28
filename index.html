@@ -1,1 +1,123 @@
-
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#444444">
+<title>Pierre Blanche</title>
+<link rel="manifest" href="site.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/path/favicon.svg">  
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+<link rel="mask-icon" href="/favicon.svg" color="#000000">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" href="styles/default.css">
+<style>
+*{margin:0;padding:0;border:0;box-sizing:border-box}  
+html{
+  background:#fff;
+  color:#444;
+  font: 200 24px "Inter", serif;
+  height:100%;
+}
+body{
+  min-height:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  grid-template-areas: 
+    "pb pb"
+    "club falaise";
+  justify-items:stretch;
+  align-items:stretch;
+  gap: 1px;
+}
+@media (orientation:portrait){
+  body{
+    grid-template-columns:1fr;
+    grid-template-rows:3fr 1fr 1fr;
+    grid-template-areas:
+      "pb"
+      "club"
+      "falaise"
+  }
+}
+body>*{
+  position:relative;
+  background:#eee;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+a{
+  text-decoration:none;
+  background:#33333a;
+  color:#aaa;
+  font-weight:300;
+  font-size:1.25rem;
+}
+a:hover{
+  background:#44444f;
+}
+main{
+  grid-area:pb;
+  text-align:center;
+}
+#club{
+  grid-area:club;
+}
+#falaise{
+  grid-area:falaise;
+}
+main>h1{font-size:2rem;margin:1rem;font-weight:900}
+main>div{
+  margin:0 10vw;
+}
+a>div{
+  text-shadow:#333 2px 2px 2px,#333 -2px -2px 2px,#333 2px -2px 2px,#333 -2px 2px 2px;
+  z-index:2;
+}
+svg{
+  opacity:0.25;
+  z-index:1;
+  position:absolute;
+  max-width:25vw;
+  max-height:50%; 
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+svg path{fill:#888}
+#falaise svg path:nth-child(1){fill:#777}
+#falaise svg path:nth-child(2){fill:#555}
+#falaise svg path:nth-child(3){fill:#999}
+</style>  
+</head>  
+<body>
+<main>
+  <h1>Pierre Blanche</h1>
+  <div>Escalade dans le Pays de Fontenay&#x2011;Vendée</div>
+</main>
+<a href="club" id="club">
+  <div>Le Club</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <path d="M128 12.4A115.8 115.8 0 0012.4 128c0 63.8 51.8 115.6 115.6 115.6a115.8 115.8 0 0081.8-197.4A114.9 114.9 0 00128 12.4m0 243.6C57.4 256 0 198.6 0 128a128.1 128.1 0 01218.5-90.5A128.1 128.1 0 01128 256"/>
+    <path d="M162.3 39.4H121l-17.8 38H65.7l-31.3 66.9L61.2 171 89 111.8l.2-.5s.6-1.6 2.4-1.8c.7-.1 1.5.1 2 .6l60 60c.6.5 1.6 1.2 2.6 1 1.1 0 2.2-1.3 2.2-2v-40.2l-27.3-27.4 13.4-28.2s.6-1.6 2.4-1.8c.8 0 1.5.1 2 .7l60 60c.7.5 1.6 1.1 2.6 1 1.2-.1 2.2-1 2.2-2.2V90.8z"/>
+    <path d="M70.2 180l46 46c.5.5 1.7 1.4 2.8 1.3a2.7 2.7 0 002.3-2.5v-39.7l-36.8-36.8z"/>
+  </svg>
+</a>
+<a href="falaise" id="falaise">
+  <div>La Falaise</div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+    <g transform="matrix(1.33333 0 0 -1.33333 -249 578)">
+      <path d="M377 260l-20 75-11-2-17 64-23-13-12 45-10-6-7 11-17-18-11-39-16 9-25-91-8 4-11-41 40-2 17-14 49 10 45-3z"/>
+      <path d="M299 363l3-26 8 28-11 15-1 16-6-18zm21-112l-1 1-5 21v25l-8-28 2-19zm-74-9l13 73 9-7 8 59 5-11 14-104zM329 397l-4-36 21-28zm11-148l-16 97 12-19 3-18 13-13 25-36z"/>
+      <path d="M277 434l-28-57 11 39zm-69-139l24 33 1 18 5 6-5 34zm-8 4v-42l-11 1zm52 70l7-27-17-23 9 25zm32 54l5-10 5 16z"/>
+    </g>
+  </svg>
+</a>
+<script>
+if(navigator.serviceWorker)navigator.serviceWorker.register('sw.js');
+</script>  
+</body>
+</html>
