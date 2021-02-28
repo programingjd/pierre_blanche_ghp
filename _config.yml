@@ -18,13 +18,3 @@ defaults:
     values:
       layout: "page"
       permalink: /:path
-  -
-    scope:
-      path: "club.md"
-    values:
-      layout: "club"
-  -
-    scope:
-      path: "falaise.md"
-    values:
-      layout: "falaise"
