@@ -60,7 +60,10 @@ a:hover{
   background:#44444a;
 }
 a:active>svg{
-  transform:translate(-50%,-50%) scale(1.1);
+  transform:translate(-50%,-50%) scale(1.05);
+}
+a:active>div{
+  transform:scale(1.05);
 }
 main{
   grid-area:pb;
@@ -79,6 +82,7 @@ main>div{
 a>div{
   text-shadow:#333 2px 2px 2px,#333 -2px -2px 2px,#333 2px -2px 2px,#333 -2px 2px 2px;
   z-index:2;
+  will-change:transform;
 }
 a>svg{
   opacity:0.25;
