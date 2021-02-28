@@ -7,14 +7,14 @@ defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
       layout: "post"
       permalink: /:collection/:name
   -
     scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
       layout: "page"
       permalink: /:path
