@@ -59,11 +59,8 @@ a{
 a:hover{
   background:#44444a;
 }
-a>svg{
-  will-change:transform;
-}
 a:active>svg{
-  transform:scale(1.1);
+  transform:translate(-50%,-50%) scale(1.1);
 }
 main{
   grid-area:pb;
@@ -83,7 +80,7 @@ a>div{
   text-shadow:#333 2px 2px 2px,#333 -2px -2px 2px,#333 2px -2px 2px,#333 -2px 2px 2px;
   z-index:2;
 }
-svg{
+a>svg{
   opacity:0.25;
   z-index:1;
   position:absolute;
@@ -91,6 +88,7 @@ svg{
   max-height:50%; 
   top:50%;
   left:50%;
+  will-change:transform;
   transform:translate(-50%,-50%);
 }
 svg path{fill:#888}
