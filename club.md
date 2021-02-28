@@ -1,1 +1,5 @@
+---
+layout: club
+---
+
 Le club.
