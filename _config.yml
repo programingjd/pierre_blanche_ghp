@@ -18,3 +18,10 @@ defaults:
     values:
       layout: page
       permalink: /:path
+  -
+    scope:
+      path: "falaise.md"
+      type: pages
+    values:
+      layout: falaise
+      permalink: /:path
