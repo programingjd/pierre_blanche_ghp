@@ -9,12 +9,12 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: "post"
+      layout: post
       permalink: /:collection/:name
   -
     scope:
       path: ""
       type: pages
     values:
-      layout: "page"
+      layout: page
       permalink: /:path
