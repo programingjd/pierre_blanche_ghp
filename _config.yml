@@ -18,10 +18,3 @@ defaults:
     values:
       layout: page
       permalink: /:path
-  -
-    scope:
-      path: "club.md"
-      type: pages
-    values:
-      layout: club
-      permalink: /:path
