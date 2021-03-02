@@ -3,6 +3,11 @@ author: Jerome David
 favicon: favicon.svg
 timezone: Europe/Paris
 
+collections:
+  posts:
+    output: true
+    permalink: /:collection/:name
+
 defaults:
   -
     scope:
@@ -10,7 +15,6 @@ defaults:
       type: posts
     values:
       layout: post
-      #permalink: /:path/post/:basename
   -
     scope:
       path: ""
