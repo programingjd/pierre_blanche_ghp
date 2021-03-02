@@ -4,13 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#444444">
+<title>Pierre Blanche - Le club.</title>
 <link rel="manifest" href="site.webmanifest">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">  
 <link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
 <link rel="mask-icon" href="favicon.svg" color="#000000">
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="styles/default.css">
-<title>Pierre Blanche - Le club.</title>
 <style>
 *{margin:0;padding:0;border:0;box-sizing:border-box}  
 html{
@@ -24,10 +24,10 @@ html{
 <body>
 {{ content }}
   
-{% for post in site.posts %}
+{%- for post in site.posts -%}
 <article>
   <a href="{{ post.url }}">{{ post.url }}</a>
 </article>  
-{% endfor %}  
+{%- endfor -%}  
 </body>
 </html>
