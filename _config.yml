@@ -10,7 +10,7 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /:path/post/:basename
+      #permalink: /:path/post/:basename
   -
     scope:
       path: ""
