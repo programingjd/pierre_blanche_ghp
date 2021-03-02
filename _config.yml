@@ -10,7 +10,7 @@ defaults:
       type: posts
     values:
       layout: post
-      permalink: /:collection/:name
+      permalink: /posts/:basename
   -
     scope:
       path: ""
